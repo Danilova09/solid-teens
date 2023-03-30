@@ -16,19 +16,44 @@
 </head>
 
 <body>
+    <!-- header-start -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_list-item">
+                        <a href="#" class="nav_list-link">
+                            <img class="main-logo_img" src="./images/logo.svg" alt="solid">
+                        </a>
+                    </li>
+                    <li class="nav_list-item">
+                        <a href="#" class="nav_list-link">
+                            Главная 
+                        </a>
+                    </li>
+                    <li class="nav_list-item">
+                        <a href="#aboutUs" class="nav_list-link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="nav_list-item">
+                        <a href="#socialMedia" class="nav_list-link">
+                            Соцсети
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav_sign-up">
+                    <a href="#signUp" class="btn btn_blue">Записаться</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header-end -->
     <!-- main-page-start -->
     <div class="main-block_wrapper">
         <main class="main-block">
             <div class="main-block_inner">
                 <div class="container">
-                    <div class="main-top">
-                        <a href="#" class="logo main-logo">
-                            <img class="main-logo_img" src="./images/logo.svg" alt="solid">
-                        </a>
-                        <p class="main-top__text">
-                            Бесплатный вебинар
-                        </p>
-                    </div>
                     <div class="main-content">
                         <div class="main-block_boy-img-wrapper">
                             <img src="images/boy-decor.png" alt="" class="main-block_boy-img">
@@ -37,7 +62,7 @@
                         </div>
                         <h1 class="main_title">Как начать свой путь в IT с ранних лет</h1>
                         <p class="main_subtitle">Развиваем интеллект вашего ребенка с помощью программирования</p>
-                        <button class="btn btn_blue main__btn">Записаться на вебинар</button>
+                        <a href="#signUp" class="btn btn_blue main__btn">Записаться на вебинар</a>
                     </div>
                     <div class="main_mentor">
                         <div class="mentor_wrapper">
@@ -62,7 +87,7 @@
     </div>
     <!-- main-page-end -->
     <!-- rating-block-start -->
-    <div class="rating-block">
+    <div id="aboutUs" class="rating-block">
         <div class="container">
             <h2 class="rating-block_title">Цифры говорят</h2>
             <div class="rating-block-cards">
@@ -122,20 +147,6 @@
         </div>
     </div>
     <!-- first-code-block-end -->
-    <!-- lessons-going-block-start -->
-    <!-- <div class="lessons-going-block">
-        <div class="container">
-            <h3 class="lessons-going-block_title title_secondary">Как проходят уроки програм­мирования</h3>
-            <div class="lessons-going-block_inner">
-                <div class="lessons-going-block_description-wrapper">
-                    <p class="lessons-going-block_description-first">Учимся онлайн. В одной вкладке видеочат с учителем, теория и тесты</p>
-                    <p class="lessons-going-block_description-second">Запишитесь на урок и узнайте о школе больше</p>
-                </div>
-                <img src="images/lessons-going-img.png" alt="" class="lessons-going-block_img">
-            </div>
-        </div>
-    </div> -->
-    <!-- lessons-going-block-end -->
     <!-- do-block-start -->
     <div class="do-block">
         <div class="container">
@@ -174,8 +185,41 @@
         </div>
     </div>
     <!-- do-block-end -->
+    <!-- activity-block-start -->
+    <div class="activity-block">
+        <div class="container">
+            <h4 class="activity-block__title title_secondary">Календарь бесплатных активностей</h4>
+            <table class="activiy-block-table">
+                <thead>
+                    <tr>
+                        <th>Событие</th>
+                        <th>Кому</th>
+                        <th>Описание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Бесплатный курс по кибербезопасности</td>
+                        <td>7–17 лет</td>
+                        <td>Курс основан на реальных историях от наших учеников и их родителей</td>
+                    </tr>
+                    <tr>
+                        <td>Построй город мечты в Roblox</td>
+                        <td>7–17 лет</td>
+                        <td>Участвуй в розыгрыше 50 000 робуксов</td>
+                    </tr>
+                    <tr>
+                        <td>Найди свой путь в мире IT</td>
+                        <td>7–17 лет</td>
+                        <td>Бесплатный курс от экспертов индустрии для подростков</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- activity-block-end -->
     <!-- register-form-block-start -->
-    <div class="register-block">
+    <div id="signUp" class="register-block">
         <div class="container">
             <div class="register-block_inner">
                 <div class="register-block_right">
@@ -389,23 +433,25 @@
                         </li>
                     </ul>
                     <a href="tel:+996557120820" class="footer_phone-number">0557-120-820</a>
-                    <div class="footer_contacts">
-                        <a href="https://wa.me/+996557120820" target="_blank">
-                            <i class="fa-brands fa-whatsapp footer_whatsapp-icon"></i>
-                        </a>
-                        <a href="https://t.me/qameious" target="_blank">
-                            <i class="fa-brands fa-telegram footer_telegram-icon"></i>
-                        </a>
-                    </div>
                 </div>
                 <div class="footer-item">
                     <h3 class="footer-list_title">
                         Соцсети для родителей
                     </h3>
-                    <ul class="footer_list-icons">
+                    <ul id="socialMedia" class="footer_list-icons">
                         <li class="footer_list-item">
                             <a href="https://www.instagram.com/solid.teens" class="footer_list-link" target="_blank">
                                 <i class="fa-brands fa-instagram footer_instagram-icon"></i>
+                            </a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="https://www.instagram.com/solid.teens" class="footer_list-link" target="_blank">
+                                <i class="fa-brands fa-whatsapp footer_whatsapp-icon"></i>
+                            </a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a href="https://www.instagram.com/solid.teens" class="footer_list-link" target="_blank">
+                                <i class="fa-brands fa-telegram footer_telegram-icon"></i>
                             </a>
                         </li>
                     </ul>
@@ -415,10 +461,8 @@
         </div>
     </footer>
     <!-- footer-end -->
-    
     <script src="accordeon.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./contact.js"></script>
 </body>
 
 </html>
