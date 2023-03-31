@@ -12,21 +12,6 @@ body {
 }
 
 /* Rating block start */
-/* // X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { ... }
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) { ... }
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) { ... }
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) { ... }
-
-// X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) { ... } */
-
 /* header-start */
 
 .header {
@@ -53,7 +38,7 @@ body {
 }
 
 .nav_list-link {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 26px;
     letter-spacing: 0.05px;
     color: #FFFFFF;
@@ -62,7 +47,13 @@ body {
 }
 
 .nav_list-link:hover {
-    color:rgba(116, 50, 229, 0.98)
+    color: rgba(116, 50, 229, 0.98)
+}
+
+@media (max-width: 767.98px) {
+    .nav_list {
+        display: none;
+    }
 }
 
 /* header-end */
@@ -138,13 +129,17 @@ body {
 }
 
 .main-logo {
-    flex-basis: 342px;
+    flex-basis: 300px;
+}
+
+.main-logo_img {
+    width: 100px;
 }
 
 .main_title {
     font-style: normal;
     font-weight: 600;
-    font-size: 77px;
+    font-size: 60px;
     line-height: 80px;
     letter-spacing: 1px;
     color: #FFFFFF;
@@ -154,7 +149,7 @@ body {
 
 .main_subtitle {
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 42px;
     align-items: center;
     letter-spacing: 1px;
@@ -167,10 +162,10 @@ body {
     border-radius: 10px;
     border: none;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 42px;
     color: #FFFFFF;
-    padding: 10px 38px;
+    padding: 5px 30px;
     cursor: pointer;
     transition: all 250ms linear;
 }
@@ -190,6 +185,10 @@ body {
 
 .main_mentor {
     margin-top: 55px;
+}
+
+.mentor_text {
+    margin-bottom: 0px;
 }
 
 .mentor_wrapper {
@@ -373,7 +372,7 @@ body {
 
 .rating-block_title {
     font-weight: 400;
-    font-size: 80px;
+    font-size: 45px;
     line-height: 80px;
     margin-bottom: 50px;
 }
@@ -394,7 +393,7 @@ body {
 
 .rating-block_card-1 {
     font-weight: 400;
-    font-size: 38px;
+    font-size: 25px;
     line-height: 44px;
     display: flex;
     align-items: center;
@@ -416,14 +415,14 @@ body {
 }
 
 .rating-block_card-2_info {
-    font-size: 39px;
+    font-size: 27px;
     line-height: 44px;
     color: #000000;
 }
 
 .rating-block_card-2_num {
     font-weight: 400;
-    font-size: 73px;
+    font-size: 50px;
     line-height: 130px;
     color: #FF9E00;
 }
@@ -460,12 +459,12 @@ body {
 }
 
 .rating-block_card-3_num {
-    font-size: 77px;
-    line-height: 130px;
+    font-size: 35px;
+    line-height: 60px;
 }
 
 .rating-block_card-3_text {
-    font-size: 39px;
+    font-size: 22px;
     line-height: 44px;
 }
 
@@ -493,6 +492,13 @@ body {
     .rating-block_card-3_text {
         font-size: 20px;
     }
+
+
+    .rating-block_card-1 {
+        flex-basis: auto;
+        padding-bottom: 40px;
+    }
+
 }
 
 @media (max-width: 767.98px) {
@@ -566,9 +572,17 @@ body {
 }
 
 .first-code-block_inner {
+    position: relative;
     border-radius: 20px;
     padding: 40px;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), radial-gradient(50% 50% at 50% 50%, rgba(255, 181, 61, 0.3) 0%, rgba(255, 181, 61, 0) 100%);
+}
+
+.first-code-block_img {
+    position: absolute;
+    width: 370px;
+    right: 0px;
+    top: 140px;
 }
 
 .btn_purple {
@@ -581,7 +595,7 @@ body {
 
 .title_secondary {
     font-weight: 400;
-    font-size: 49px;
+    font-size: 30px;
     line-height: 56px;
     color: #FFFFFF;
 }
@@ -593,7 +607,7 @@ body {
 
 .first-code-block_description {
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 40px;
     max-width: 530px;
     color: rgba(255, 255, 255, 0.8);
@@ -605,12 +619,18 @@ body {
 
 .first-code-block_register-text {
     margin-top: 15px;
-    font-size: 23px;
+    font-size: 18px;
 }
 
 .first-code-block_register-text a {
     color: #D571FF;
     text-decoration: underline;
+}
+
+@media (max-width: 991.98px) {
+    .first-code-block_img {
+        display: none;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -707,7 +727,7 @@ body {
 
 .do-block-card_title-dark {
     font-weight: 400;
-    font-size: 38px;
+    font-size: 28px;
     line-height: 44px;
     max-width: 280px;
     color: #000000;
@@ -719,13 +739,13 @@ body {
 
 .do-block-card_title-light {
     font-weight: 400;
-    font-size: 38px;
+    font-size: 28px;
     line-height: 44px;
     color: #fff;
 }
 
 .do-block-card_description {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 24px;
     max-width: 240px;
     margin-top: 20px;
@@ -803,6 +823,12 @@ body {
     max-width: 480px;
 }
 
+.do-block-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 1199.98px) {
 
     .do-block-card_title-light,
@@ -812,9 +838,19 @@ body {
 }
 
 @media (max-width: 991.98px) {
+    .do-block_title {
+        text-align: center;
+    }
     .do-block_cards {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        max-width: 390px;
     }
+
+    .do-block-card {
+        padding: 20px 30px;
+    }
+
 
     .do-block-card_dec {
         display: none;
@@ -848,17 +884,21 @@ body {
 
 /* do-block-end */
 /* activity-block-start */
+.activity-block {
+    padding: 50px 0px;
+}
 .activity-block__title {
     text-align: center;
 }
 
 .activiy-block-table {
+    margin-top: 50px;
     border-collapse: collapse;
 }
 
 .activiy-block-table th {
     padding: 20px;
-    font-size: 22px;
+    font-size: 17px;
     line-height: 32px;
     color: rgba(255, 255, 255, 0.64);
 }
@@ -866,7 +906,7 @@ body {
 .activiy-block-table td {
     padding: 20px;
     border: 1px solid grey;
-    font-size: 24px;
+    font-size: 17px;
     line-height: 32px;
     color: #FFFFFF;
 }
@@ -937,10 +977,10 @@ body {
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
     border-radius: 8px;
-    padding: 15px 17px;
+    padding: 10px 15px;
     outline: none;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 29px;
     color: #B5B5B5;
     max-width: 400px;
@@ -948,7 +988,7 @@ body {
 
 .form-input::placeholder {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 29px;
     color: #B5B5B5;
 }
@@ -1006,6 +1046,7 @@ body {
 
 .questions-block_title {
     margin-bottom: 70px;
+    text-align: center;
 }
 
 /* questions-block-end */
