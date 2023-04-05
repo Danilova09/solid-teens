@@ -926,6 +926,19 @@ body {
 	}
 }
 
+@media (max-width: 576.98px) {
+	.activiy-block-table th {
+		padding: 5px;
+		font-size: 10px;
+	}
+
+	.activiy-block-table td {
+		padding: 5px;
+		font-size: 10px;
+	}
+}
+
+
 /* activity-block-end */
 /* register-block-start */
 .register-block {
